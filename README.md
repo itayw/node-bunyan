@@ -84,7 +84,7 @@ full API is:
                     // This is equivalent to `log.isInfoEnabled()` or
                     // `log.isEnabledFor(INFO)` in log4j.
 
-    log.info('hi');                     // Log a simple string message.
+    log.info('hi');                     // Log a simple string message (or number).
     log.info('hi %s', bob, anotherVar); // Uses `util.format` for msg formatting.
 
     log.info({foo: 'bar'}, 'hi');
@@ -110,7 +110,7 @@ This will dove-tail with [Bunyan serializer support](#serializers), discussed
 later.
 
 The same goes for all of Bunyan's log levels: `log.trace`, `log.debug`,
-`log.info`, `log.warn`, and `log.fatal`. See the [levels section](#levels)
+`log.info`, `log.warn`, `log.error`, and `log.fatal`. See the [levels section](#levels)
 below for details and suggestions.
 
 
@@ -165,7 +165,7 @@ streams at different levels**.
       streams: [
         {
           level: 'info',
-          stream: process.stdout,           // log INFO and above to stdout
+          stream: process.stdout            // log INFO and above to stdout
         },
         {
           level: 'error',

@@ -6,9 +6,23 @@ Known issues:
   bug](https://github.com/TooTallNate/node-gyp/issues/65).
 
 
-## bunyan 0.22.2 (not yet released)
+## bunyan 0.22.4 (not yet released)
 
 (nothing yet)
+
+
+## bunyan 0.22.3
+
+- Republish the same code to npm.
+
+
+## bunyan 0.22.2
+
+Note: Bad release. The published package in the npm registry got corrupted. Use 0.22.3 or later.
+
+- #131 Allow `log.info(<number>)` and, most importantly, don't crash on that.
+
+- Update 'mv' optional dep to latest.
 
 
 ## bunyan 0.22.1
